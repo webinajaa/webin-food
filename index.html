@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RISCO FOOD - Pesan Mudah, Makan Lebih Nikmat | Kuliner Terbaik</title>
+  
+  <meta name="description" content="RISCO FOOD menyajikan kuliner lezat, paket hemat, dan minuman segar di Majene. Pesan cepat via WhatsApp!">
+  <meta name="keywords" content="kuliner, restoran, rumah makan, cafe, pesan makanan online, risco food, majene, delivery makanan">
+  <meta name="author" content="RISCO FOOD">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RISCO FOOD - Pesan Mudah, Makan Lebih Nikmat">
+  <meta property="og:description" content="Katalog menu lezat dan pemesanan instan via WhatsApp. Pesan sekarang!">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80">
+  
+  <!-- Tautan Berkas CSS Eksternal (Relatif) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pengumuman Atas -->
+  <div class="top-announcement">
+    <div class="container">
+      <span>🔥 PROMO HARI INI</span> Gunakan Kode <strong>RISCOHEMAT</strong> untuk Diskon Rp 10.000! Ongkir Khusus Area Majene.
+    </div>
+  </div>
+
+  <!-- Navigasi -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo-brand">
+        <div class="logo-icon">R</div>
+        <div class="logo-text">
+          <h1>RISCO FOOD</h1>
+          <p>Majene • Est. 2024</p>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#menu">Menu Spesial</a></li>
+        <li><a href="#promo">Promo</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" title="Ganti Tema">
+          <span id="themeIcon">🌙</span>
+        </button>
+
+        <button class="cart-nav-btn" id="cartOpenBtn" title="Lihat Keranjang">
+          <span>🛒</span>
+          <span class="cart-badge" id="cartBadgeCount">0</span>
+        </button>
+
+        <button class="mobile-menu-toggle" id="mobileMenuBtn" title="Menu Navigasi">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#home" class="mobile-nav-link">Beranda</a>
+      <a href="#menu" class="mobile-nav-link">Katalog Menu</a>
+      <a href="#promo" class="mobile-nav-link">Promo Hemat</a>
+      <a href="#keunggulan" class="mobile-nav-link">Keunggulan Bisnis</a>
+      <a href="#testimoni" class="mobile-nav-link">Testimoni</a>
+      <a href="#galeri" class="mobile-nav-link">Galeri</a>
+      <a href="#lokasi" class="mobile-nav-link">Lokasi</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span id="storeStatusText">Buka Sekarang (09:00 - 22:00 WITA)</span>
+          </div>
+
+          <h2 class="hero-title">
+            Pesan Mudah, Makan <span class="text-highlight">Lebih Nikmat</span> Setiap Saat.
+          </h2>
+
+          <p class="hero-desc">
+            Hidangan lezat dengan bumbu rempah pilihan, higienis, dan porsi memuaskan. Siap diantar hangat sampai depan pintu rumah Anda di Majene.
+          </p>
+
+          <div class="hero-btns">
+            <a href="#menu" class="btn btn-primary">🍽️ Lihat Menu Lengkap</a>
+            <a href="https://wa.me/6285825214868?text=Halo%20RISCO%20FOOD,%20saya%20mau%20order" target="_blank" class="btn btn-whatsapp">💬 Hubungi WhatsApp</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <h4>1.500+</h4>
+              <p>Pesanan Puas</p>
+            </div>
+            <div class="hero-stat-item">
+              <h4>4.9 ★</h4>
+              <p>Rating Ulasan</p>
+            </div>
+            <div class="hero-stat-item">
+              <h4>25 Menit</h4>
+              <p>Rata-rata Antar</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Sajian Makanan RISCO FOOD" loading="lazy">
+          </div>
+          <div class="hero-float-card">
+            <div class="float-icon">⚡</div>
+            <div class="float-text">
+              <h5>100% Halal & Higienis</h5>
+              <p>Bahan segar pilihan harian</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Banner -->
+  <section class="promo-banner-section" id="promo">
+    <div class="container">
+      <div class="promo-card">
+        <div class="promo-info">
+          <span class="badge badge-dark">⚡ FLASH SALE SPESIAL</span>
+          <h3 style="margin-top: 10px;">Potongan Harga s/d 25% Hari Ini!</h3>
+          <p>Khusus pemesanan via website hari ini. Gunakan voucher untuk hemat belanja Anda.</p>
+          <div class="promo-code-box">KODE: <span>RISCOHEMAT</span></div>
+        </div>
+
+        <div class="countdown-wrapper">
+          <div class="countdown-box">
+            <span class="countdown-number" id="cdHours">05</span>
+            <span class="countdown-label">Jam</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-number" id="cdMinutes">42</span>
+            <span class="countdown-label">Menit</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-number" id="cdSeconds">18</span>
+            <span class="countdown-label">Detik</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keunggulan Bisnis -->
+  <section id="keunggulan" style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Kenapa Memilih Kami</span>
+        <h2 class="section-title">Kelezatan Tanpa Kompromi</h2>
+        <p class="section-subtitle">Kami mengutamakan rasa autentik, kebersihan dapur, dan kecepatan layanan.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🍲</div>
+          <h3>Bumbu Racikan Asli</h3>
+          <p>Menggunakan resep rahasia rempah tradisional nusantara yang meresap sempurna hingga ke serat terdalam.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🚀</div>
+          <h3>Pengantaran Cepat</h3>
+          <p>Makanan dikemas dengan rapi dan aman agar tetap hangat saat tiba di tangan pelanggan.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">💰</div>
+          <h3>Harga Terjangkau</h3>
+          <p>Porsi melimpah dengan harga ramah kantong untuk pelajar, keluarga, maupun acara kantor di Majene.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">📱</div>
+          <h3>Pesan 1-Klik WhatsApp</h3>
+          <p>Tanpa ribet instal aplikasi tambahan. Cukup pilih menu, langsung terhubung ke WhatsApp otomatis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Katalog Menu -->
+  <section id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Pilihan Menu Favorit</span>
+        <h2 class="section-title">Katalog Menu RISCO FOOD</h2>
+        <p class="section-subtitle">Pilih santapan favorit Anda mulai dari hidangan utama, cemilan gurih, hingga minuman segar.</p>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="catalog-top-bar">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Cari menu favorit (contoh: Ayam, Nasi Goreng, Kopi)...">
+          </div>
+
+          <div class="sort-box">
+            <label for="sortSelect">Urutkan:</label>
+            <select id="sortSelect" class="sort-select">
+              <option value="default">Rekomendasi</option>
+              <option value="price-low">Harga: Termurah</option>
+              <option value="price-high">Harga: Termahal</option>
+              <option value="popular">Paling Populer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="category-pills" id="categoryPills">
+          <button class="pill-btn active" data-category="all">Semua Menu</button>
+          <button class="pill-btn" data-category="paket">🍱 Paket Hemat</button>
+          <button class="pill-btn" data-category="makanan">🍛 Makanan Utama</button>
+          <button class="pill-btn" data-category="minuman">🍹 Minuman Segar</button>
+          <button class="pill-btn" data-category="cemilan">🍟 Cemilan & Snack</button>
+        </div>
+      </div>
+
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Ulasan Nyata</span>
+        <h2 class="section-title">Apa Kata Pelanggan Kami?</h2>
+        <p class="section-subtitle">Pelanggan di Majene telah membuktikan kelezatan hidangan dan kecepatan layanan kami.</p>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Paling suka Paket Ayam Bakar Madu-nya! Bumbunya legit meresap sampai ke tulang. Pengantaran ke daerah Lutang juga cepat banget dan masih hangat."</p>
+          <div class="testi-user">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Pelanggan" class="testi-avatar">
+            <div>
+              <h5 class="testi-name">Santriani Irwan</h5>
+              <p class="testi-role">Pelanggan Setia • Majene</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Website pemesanannya keren dan sangat praktis! Tinggal klik, langsung masuk ke WhatsApp dengan rincian yang rapi tanpa perlu ketik ulang."</p>
+          <div class="testi-user">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Pelanggan" class="testi-avatar">
+            <div>
+              <h5 class="testi-name">Agung Wirawan</h5>
+              <p class="testi-role">Wirausaha Muda</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Kopi Susu Gula Aren & Nasi Goreng Seafood-nya juara. Pas buat makan siang bareng rekan kantor. Porsi banyak dan ramah di kantong."</p>
+          <div class="testi-user">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Pelanggan" class="testi-avatar">
+            <div>
+              <h5 class="testi-name">Nur Fadilah</h5>
+              <p class="testi-role">Pegawai Swasta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section id="galeri">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Galeri Visual</span>
+        <h2 class="section-title">Kenyamanan & Kelezatan</h2>
+        <p class="section-subtitle">Potret dapur higienis kami, bahan pilihan segar, dan area santap nyaman.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Dapur">
+          <div class="gallery-overlay"><h5>Penyajian Dapur Higienis</h5></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Tempat">
+          <div class="gallery-overlay"><h5>Area Santap Nyaman</h5></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Bahan">
+          <div class="gallery-overlay"><h5>Bahan Pilihan Segar</h5></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80" alt="Minuman">
+          <div class="gallery-overlay"><h5>Bar Minuman & Racikan Kopi</h5></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lokasi & Peta -->
+  <section id="lokasi" style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Kunjungi Kami</span>
+        <h2 class="section-title">Lokasi & Jam Buka</h2>
+        <p class="section-subtitle">Tersedia layanan bawa pulang, makan di tempat, dan pesan antar ke alamat Anda.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-card">
+          <div class="location-item">
+            <div class="loc-icon">📍</div>
+            <div class="loc-text">
+              <h4>Alamat Lengkap</h4>
+              <p>Jl. Jenderal Sudirman No. 45, Banggae, Kabupaten Majene, Sulawesi Barat 91412</p>
+            </div>
+          </div>
+
+          <div class="location-item">
+            <div class="loc-icon">🕒</div>
+            <div class="loc-text">
+              <h4>Jam Operasional</h4>
+              <p>Senin - Minggu: 09:00 - 22:00 WITA<br>(Pemesanan antar dilayani sampai 21:30 WITA)</p>
+            </div>
+          </div>
+
+          <div class="location-item">
+            <div class="loc-icon">📞</div>
+            <div class="loc-text">
+              <h4>Kontak Pemesanan</h4>
+              <p>WhatsApp: <strong>0858-2521-4868</strong><br>Email: riscofood.official@gmail.com</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 25px;">
+            <a href="https://maps.google.com/?q=Majene,+Sulawesi+Barat" target="_blank" class="btn btn-primary btn-sm">🗺️ Buka di Google Maps</a>
+            <button class="btn btn-secondary btn-sm" id="shareBtn">🔗 Bagikan Website</button>
+            <button class="btn btn-secondary btn-sm" id="copyWaBtn">📋 Salin Nomor WA</button>
+          </div>
+        </div>
+
+        <div class="map-frame-wrapper">
+          <iframe title="Peta Lokasi" src="https://maps.google.com/maps?q=Majene%20Sulawesi%20Barat&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Tanya Jawab</span>
+        <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+        <p class="section-subtitle">Informasi seputar cara pemesanan, ongkos kirim, dan metode pembayaran.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item active">
+          <div class="faq-header">
+            <h4>Bagaimana cara memesan makanan di RISCO FOOD?</h4>
+            <span class="faq-toggle-icon">▼</span>
+          </div>
+          <div class="faq-body">
+            Pilih menu di katalog, klik tombol tambah (+), buka keranjang belanja, pilih opsi pengiriman, lalu klik tombol Checkout via WhatsApp. Anda langsung diarahkan ke chat WhatsApp pemilik usaha dengan rincian pesanan yang terformat rapi secara otomatis.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <h4>Berapa ongkos kirim ke area saya di Majene?</h4>
+            <span class="faq-toggle-icon">▼</span>
+          </div>
+          <div class="faq-body">
+            Untuk area Majene Kota atau Banggae ongkir sebesar Rp 5.000, Banggae Timur Rp 8.000, dan wilayah Lutang atau Segeri Rp 12.000.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <h4>Metode pembayaran apa saja yang diterima?</h4>
+            <span class="faq-toggle-icon">▼</span>
+          </div>
+          <div class="faq-body">
+            Kami menerima COD atau tunai di tempat saat kurir sampai, QRIS instan untuk semua dompet digital, serta transfer rekening bank.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>RISCO FOOD</h2>
+          <p>Penyedia aneka santapan kuliner lezat, higienis, dan terjangkau di Majene, Sulawesi Barat.</p>
+          <div style="font-size: 0.85rem; color: #cbd5e1;">
+            📍 Banggae, Majene, Sulbar<br>
+            📞 WhatsApp: 0858-2521-4868
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#menu">Katalog Menu</a></li>
+            <li><a href="#promo">Promo Hari Ini</a></li>
+            <li><a href="#keunggulan">Keunggulan</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Bantuan</h4>
+          <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="https://wa.me/6285825214868" target="_blank">Layanan WhatsApp</a></li>
+            <li><a href="javascript:void(0)" onclick="openAdminModal()">Demo Panel Pemilik</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Metode Pembayaran</h4>
+          <div class="payment-badges">
+            <span class="payment-badge">💵 COD</span>
+            <span class="payment-badge">📱 QRIS</span>
+            <span class="payment-badge">💳 Transfer Bank</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 <strong>RISCO FOOD</strong>. Hak Cipta Dilindungi.</div>
+        <div style="opacity: 0.8;">Solusi Website Digital Profesional untuk Bisnis UMKM.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="floating-actions">
+    <a href="https://wa.me/6285825214868?text=Halo%20RISCO%20FOOD,%20saya%20tertarik%20untuk%20order" target="_blank" class="float-btn float-whatsapp" title="Chat WhatsApp">💬</a>
+    <button class="float-btn float-top" id="backToTopBtn" title="Kembali ke Atas">▲</button>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Keranjang Belanja (<span id="cartHeaderQty">0</span>)</h3>
+      <button class="close-btn" id="cartCloseBtn">✕</button>
+    </div>
+
+    <div class="cart-items-list" id="cartItemsList"></div>
+
+    <div class="cart-footer">
+      <div class="coupon-box">
+        <input type="text" id="couponInput" placeholder="KODE VOUCHER (RISCOHEMAT)">
+        <button class="btn btn-secondary btn-sm" id="applyCouponBtn">Pakai</button>
+      </div>
+      <div id="couponAppliedBadge" style="display:none; font-size: 0.8rem; color: #16a34a; font-weight:700; margin-bottom: 10px;">
+        ✓ Voucher Diskon Berhasil Digunakan!
+      </div>
+
+      <div class="cart-calc-row">
+        <span>Subtotal Menu</span>
+        <span id="cartSubtotalText">Rp 0</span>
+      </div>
+      <div class="cart-calc-row" id="discountRow" style="display: none; color: #16a34a;">
+        <span>Potongan Promo</span>
+        <span id="cartDiscountText">- Rp 0</span>
+      </div>
+      <div class="cart-calc-row">
+        <span>Estimasi Ongkir</span>
+        <span id="cartShippingText">Rp 5.000</span>
+      </div>
+      <div class="cart-calc-row total-row">
+        <span>Total Pembayaran</span>
+        <span id="cartTotalText" style="color: var(--primary);">Rp 0</span>
+      </div>
+
+      <button class="btn btn-primary" id="proceedCheckoutBtn" style="width: 100%; margin-top: 16px;">
+        Lanjut ke Data Pemesan ➔
+      </button>
+    </div>
+  </aside>
+
+  <!-- Modal Checkout -->
+  <div class="modal-overlay" id="checkoutModalOverlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Formulir Pemesanan</h3>
+        <button class="close-btn" id="closeCheckoutBtn">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="checkoutForm">
+          <div class="form-group">
+            <label for="custName">Nama Lengkap <span>*</span></label>
+            <input type="text" id="custName" class="form-control" placeholder="Contoh: Budi Santoso" required>
+          </div>
+
+          <div class="form-group">
+            <label for="custPhone">Nomor WhatsApp Anda <span>*</span></label>
+            <input type="tel" id="custPhone" class="form-control" placeholder="Contoh: 081234567890" required>
+          </div>
+
+          <div class="form-group">
+            <label>Tipe Layanan <span>*</span></label>
+            <div class="radio-pill-group">
+              <label class="radio-pill">
+                <input type="radio" name="orderType" value="Delivery" checked>
+                <span>🛵 Antar (Delivery)</span>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="orderType" value="Pickup">
+                <span>🛍️ Ambil Sendiri</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group" id="shippingZoneGroup">
+            <label for="shippingZone">Zona Pengiriman (Majene) <span>*</span></label>
+            <select id="shippingZone" class="form-control">
+              <option value="5000">Majene Kota / Banggae (Rp 5.000)</option>
+              <option value="8000">Banggae Timur (Rp 8.000)</option>
+              <option value="12000">Lutang / Segeri (Rp 12.000)</option>
+              <option value="15000">Luar Area (Konfirmasi WA)</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="addressGroup">
+            <label for="custAddress">Alamat Pengiriman Lengkap <span>*</span></label>
+            <textarea id="custAddress" class="form-control" rows="2" placeholder="Nama jalan, nomor rumah, atau patokan..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="custNotes">Catatan Khusus (Opsional)</label>
+            <textarea id="custNotes" class="form-control" rows="2" placeholder="Contoh: Pedas sedang, es teh jangan terlalu manis"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="payMethod">Metode Pembayaran <span>*</span></label>
+            <select id="payMethod" class="form-control" required>
+              <option value="COD / Bayar di Tempat">COD / Tunai saat Pesanan Sampai</option>
+              <option value="QRIS Instan">QRIS Instan</option>
+              <option value="Transfer Bank BRI">Transfer Bank BRI</option>
+              <option value="Transfer Bank BCA">Transfer Bank BCA</option>
+            </select>
+          </div>
+
+          <div style="background: var(--bg-body); padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between; font-weight: 800; font-size: 1.05rem;">
+              <span>Total Pembayaran:</span>
+              <span id="modalCheckoutGrandTotal" style="color: var(--primary);">Rp 0</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
+            <span>💬</span> Kirim Pesanan via WhatsApp Sekarang
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Demo Admin -->
+  <div class="modal-overlay" id="adminModalOverlay">
+    <div class="modal-box" style="max-width: 600px;">
+      <div class="modal-header">
+        <h3>Dashboard Pemilik Toko (Demo Admin)</h3>
+        <button class="close-btn" onclick="closeAdminModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+          Simulator panel pemilik bisnis untuk memantau ringkasan omset dan menguji penambahan menu secara langsung.
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;">
+          <div style="background: var(--bg-body); border: 1px solid var(--border-color); padding: 12px; border-radius: var(--radius-sm); text-align: center;">
+            <h5 style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Omset Hari Ini</h5>
+            <p style="font-size: 1.15rem; font-weight: 800; color: var(--primary);">Rp 845.000</p>
+          </div>
+          <div style="background: var(--bg-body); border: 1px solid var(--border-color); padding: 12px; border-radius: var(--radius-sm); text-align: center;">
+            <h5 style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Pesanan</h5>
+            <p style="font-size: 1.15rem; font-weight: 800; color: var(--primary);">24 Order</p>
+          </div>
+          <div style="background: var(--bg-body); border: 1px solid var(--border-color); padding: 12px; border-radius: var(--radius-sm); text-align: center;">
+            <h5 style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Menu Aktif</h5>
+            <p id="adminStatProducts" style="font-size: 1.15rem; font-weight: 800; color: var(--primary);">12 Menu</p>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-body); padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); margin-bottom: 16px;">
+          <h4 style="font-size: 0.95rem; font-weight: 800; margin-bottom: 10px;">➕ Tambah Menu Cepat</h4>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+            <input type="text" id="newProdName" class="form-control" placeholder="Nama Menu Baru">
+            <input type="number" id="newProdPrice" class="form-control" placeholder="Harga (contoh: 20000)">
+          </div>
+          <div style="margin-bottom: 10px;">
+            <select id="newProdCategory" class="form-control">
+              <option value="makanan">Makanan Utama</option>
+              <option value="minuman">Minuman Segar</option>
+              <option value="cemilan">Cemilan & Snack</option>
+              <option value="paket">Paket Hemat</option>
+            </select>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="addNewProductLive()" style="width: 100%;">
+            Tambah ke Katalog Website
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifikasi -->
+  <div class="toast-box" id="toastNotification">
+    <span id="toastIcon">🛒</span>
+    <span id="toastMessage">Produk berhasil ditambahkan!</span>
+  </div>
+
+  <!-- Tautan Berkas JavaScript Eksternal (Relatif) -->
+  <script src="script.js"></script>
+</body>
+</html>
